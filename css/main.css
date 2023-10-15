@@ -1,13 +1,18 @@
 .kanban {
 	display: flex;
 	padding: 30px;
-	width: 750px;
-	background: #009578;
+	width: 69em;
+	background-image:radial-gradient(pink,rgb(130, 238, 162) ,chocolate);
+
 	border-radius: 5px;
+	border:gold 16px solid 
 }
 
 .kanban * {
-	font-family: sans-serif;
+	font-family: 12px sans-serif;
+	font-style: italic;
+	font-weight:bold;
+	text-align: center;
 }
 
 .kanban__column {
@@ -23,6 +28,10 @@
 	font-size: 30px;
 	color: white;
 	user-select: none;
+	color:wheat;
+	background-image:linear-gradient(30deg,red,blue,green);
+
+
 }
 
 .kanban__item-input {
@@ -31,25 +40,31 @@
 	background: white;
 	border-radius: 5px;
 	cursor: pointer;
+	
 }
 
 .kanban__dropzone {
-	height: 10px;
+	height: 11px;
 	transition: background 0.15s, height 0.15s;
 }
 
 .kanban__dropzone--active {
 	height: 20px;
 	background: rgba(0, 0, 0, 0.25);
+
 }
 
 .kanban__add-item {
 	width: 100%;
 	padding: 10px 0;
-	font-size: 16px;
-	color: white;
+	font-size: 20px;
+	color:white;
 	background: rgba(0, 0, 0, 0.1);
-	border: none;
-	border-radius: 5px;
+	border: rgb(42, 165, 63) 5px solid ;
+	border-radius: 56px;
 	cursor: pointer;
+ &:hover{
+	color:chartreuse;
+	font-size: 30px;
+ }
 }
